@@ -1,0 +1,22 @@
+{
+  "name": "graphql-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Danilo Barros <danilobjr@gmail.com> (https://github.com/danilobjr)",
+  "license": "MIT",
+  "dependencies": {
+    "g": "2.0.1",
+    "graphql-yoga": "1.14.10",
+    "now": "11.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "1.17.5"
+  }
+}
