@@ -1,5 +1,6 @@
 # import Person from 'person.graphql'
 
 type Query {
-	people: [Person]
+  people: [Person]
+  person(name: String!): Person
 }

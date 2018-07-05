@@ -6,8 +6,9 @@ const typeDefs = importSchema('graphql/schema.graphql');
 
 const resolvers = {
 	Query: {
-		people: () => data.people
-	}
+		people: () => data.people,
+		person: (_, { name }) => data.people.find((p) => p.name.includes(name)),
+	},
 };
 
 const server = new GraphQLServer({ typeDefs, resolvers });
@@ -16,4 +17,7 @@ const serverOptions = {
 	port: 9000
 };
 
-server.start(serverOptions, ({ port }) => console.log(`Server is running on localhost: ${port}`));
+server.start(
+  serverOptions,
+  ({ port }) => console.log(`Server is running on localhost: ${port}`),
+);
