@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "g": "2.0.1",
-    "graphql-yoga": "1.14.10",
+    "graphql-yoga": "1.14.12",
     "nanoid": "1.0.4",
     "now": "11.2.5"
   },
