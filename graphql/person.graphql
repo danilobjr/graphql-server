@@ -5,3 +5,10 @@ type Person {
   occupation: String
   age: Int
 }
+
+input PersonInput {
+  name: String!
+  email: String!
+  occupation: String
+  age: Int
+}

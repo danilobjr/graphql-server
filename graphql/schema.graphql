@@ -4,3 +4,7 @@ type Query {
   people: [Person]
   person(name: String!): Person
 }
+
+type Mutation {
+  createPerson(person: PersonInput!): Person
+}
