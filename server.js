@@ -3,6 +3,7 @@ const { importSchema } = require('graphql-import');
 const nanoid = require('nanoid');
 const data = require('./data');
 
+// TODO: extend PersonInput from Person?
 const typeDefs = importSchema('graphql/schema.graphql');
 
 const resolvers = {
